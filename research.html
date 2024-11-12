@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>Research</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="Radio Map Group, Northwest University">
+      <meta name="author" content="">
+      <!-- Le styles -->
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+      <link href="css/theme.css" rel="stylesheet">
+   </head>
+   <body>
+      <div class="container">
+         <header class="jumbotron subhead" id="overview">
+            <p class="lead"> Northwest University </p>
+            <h1>Radio Map Group</h1>
+         </header>
+         <div class="masthead">
+            <div class="navbar">
+               <div class="navbar-inner">
+                  <div class="container">
+                     <ul class="nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="members.html">Members</a></li>
+                        <li class="active"><a href="#">Research</a></li>
+                        <li><a href="publications.html">Publications</a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <hr>
+         <div class="row-fluid">
+            <div class="span3 bs-docs-sidebar" id="navparent">
+               <ul class="nav nav-list bs-docs-sidenav" data-spy="affix" data-offset-top="200" data-offset-bottom="260">
+                  <li><a href="#nano"> Radio Map </a></li>
+                  <li><a class="subhead" href="#Static Target Search"> Static Target Search </a></li>
+                  <li><a class="subhead" href="#Dynamic Object Tracking"> Dynamic Object Tracking  </a></li>
+                  <li><a class="subhead" href="#Path Planning"> Path Planning </a></li>
+                  <li><a class="subhead" href="#Networking In Communications">Networking In Communications </a></li>
+                  <li><a class="subhead" href="#Trajectory Planning"> Trajectory Planning </a></li>
+               </ul>
+            </div>
+            <div class="span8 offset1">
+               <section id="nano">
+                  <div class="page-header">
+                     <h3>Radio Map</h3>
+                  </div>
+                  <div class="row-fluid">
+                     <div class="span12">
+                        <section id="Static Target Search">
+                           <h4>Static Target Search</h4>
+                           <br/>
+                           <img src="images/other/re-1.png" class="float-right" alt="Static Target Search"/>
+                           <p>
+                             The UAV designs a minimum mean square error (MMSE) estimator based on the received signal strength (RSS) map of a static target to achieve precise localization.
+                           </p> 
+                        </section>
+                        <hr>
+                        <section id="Dynamic Object Tracking">
+                           <h4>Dynamic Object Tracking</h4>
+                           <br/>
+                           <img src="images/other/re-2.png" class="float-right" alt="Dynamic Object Tracking"/>
+                           <p>
+                              For dynamic target tracking, the UAV constructs a time-varying RSS map using the signal strength received from the moving target, enabling real-time positioning of the dynamic target.
+                           </p>
+                        </section>
+                        <hr>
+                        <section id="Path Planning">
+                           <h4>Path Planning</h4>
+                           <br/>
+                           <img src="images/other/re-3.png" class="float-right" alt="Path Planning"/>
+                           <p>
+                              The UAV optimizes its trajectory by constructing both RSS and SINR maps, which assist in interference-avoidant path planning.
+
+                           </p>
+                        </section>
+                        <hr>
+                        <section id="Networking In Communications">
+                           <h4>Networking In Communications</h4>
+                           <br/>
+                           <img src="images/other/re-4.png" class="float-right" alt="Networking In Communications"width="300" height="auto"/>
+                           <p>
+                              Air-Ground Network Topology: The UAV optimizes its position relative to the ground network to bridge ground-based D2D sub-networks, thereby maximizing throughput.
+                           </p>
+                           <div style="clear: both;"></div> <!-- 清除浮动 -->
+                        </section>
+                        <hr>
+                        <section id="Trajectory Planning">
+                           <h4>Trajectory Planning </h4>
+                           <br/>
+                           <img src="images/other/re-5.png" class="float-right" alt="Trajectory Planning" width="300" height="auto"/>
+                           <p>
+                              This paper introduces a dual-threshold UAV trajectory planning method that enhances energy efficiency through demand-based position updates.   
+                           </p>
+                           <div style="clear: both;"></div> <!-- 清除浮动 -->
+                        </section>
+                     </div>
+                  </div>
+               </section>
+               <hr>
+            </div>
+         </div>
+      </div>
+      <footer id="footer">
+         <div class="container-fluid" align="center">
+               <p><br>Northwest University, School of Information Science and Technology<br>
+                </p>      
+            </div>
+         </div>
+      </footer>
+
+      <!-- Le javascript
+         ================================================== -->
+      <!-- Placed at the end of the document so the pages load faster -->
+      <script src="js/jquery-1.9.1.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script>
+         $(document).ready(function() {
+             $(document.body).scrollspy({
+                 target: "#navparent"
+             });
+         });
+         
+      </script>
+   </body>
+</html>
